@@ -1,0 +1,399 @@
+{
+	"compiler": {
+		"version": "0.8.20+commit.a1b79de6"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "name_",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "symbol_",
+						"type": "string"
+					},
+					{
+						"internalType": "uint8",
+						"name": "decimals_",
+						"type": "uint8"
+					},
+					{
+						"internalType": "uint256",
+						"name": "initialSupply_",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "constructor"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": true,
+						"internalType": "address",
+						"name": "owner",
+						"type": "address"
+					},
+					{
+						"indexed": true,
+						"internalType": "address",
+						"name": "spender",
+						"type": "address"
+					},
+					{
+						"indexed": false,
+						"internalType": "uint256",
+						"name": "value",
+						"type": "uint256"
+					}
+				],
+				"name": "Approval",
+				"type": "event"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": true,
+						"internalType": "address",
+						"name": "from",
+						"type": "address"
+					},
+					{
+						"indexed": true,
+						"internalType": "address",
+						"name": "to",
+						"type": "address"
+					},
+					{
+						"indexed": false,
+						"internalType": "uint256",
+						"name": "value",
+						"type": "uint256"
+					}
+				],
+				"name": "Transfer",
+				"type": "event"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "owner",
+						"type": "address"
+					},
+					{
+						"internalType": "address",
+						"name": "spender",
+						"type": "address"
+					}
+				],
+				"name": "allowance",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "spender",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "value",
+						"type": "uint256"
+					}
+				],
+				"name": "approve",
+				"outputs": [
+					{
+						"internalType": "bool",
+						"name": "",
+						"type": "bool"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "account",
+						"type": "address"
+					}
+				],
+				"name": "balanceOf",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "decimals",
+				"outputs": [
+					{
+						"internalType": "uint8",
+						"name": "",
+						"type": "uint8"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "to",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "value",
+						"type": "uint256"
+					}
+				],
+				"name": "mint",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "name",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "",
+						"type": "string"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "symbol",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "",
+						"type": "string"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "totalSupply",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "to",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "value",
+						"type": "uint256"
+					}
+				],
+				"name": "transfer",
+				"outputs": [
+					{
+						"internalType": "bool",
+						"name": "",
+						"type": "bool"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "from",
+						"type": "address"
+					},
+					{
+						"internalType": "address",
+						"name": "to",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "value",
+						"type": "uint256"
+					}
+				],
+				"name": "transferFrom",
+				"outputs": [
+					{
+						"internalType": "bool",
+						"name": "",
+						"type": "bool"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"details": "基于 ERC20 标准的简单代币合约，支持转账、授权、代扣、增发功能",
+			"events": {
+				"Approval(address,address,uint256)": {
+					"details": "授权事件：当 owner 授权 spender 操作代币时触发",
+					"params": {
+						"owner": "代币所有者",
+						"spender": "被授权地址",
+						"value": "授权额度（最小代币单位）"
+					}
+				},
+				"Transfer(address,address,uint256)": {
+					"details": "转账事件：当代币从 from 转移到 to 时触发",
+					"params": {
+						"from": "转账发起者（零地址表示增发）",
+						"to": "转账接收者",
+						"value": "转账数量（最小代币单位）"
+					}
+				}
+			},
+			"kind": "dev",
+			"methods": {
+				"allowance(address,address)": {
+					"details": "查询授权额度：spender 可从 owner 账户代扣的剩余代币数量",
+					"params": {
+						"owner": "代币所有者地址",
+						"spender": "被授权地址"
+					},
+					"returns": {
+						"_0": "剩余授权额度（最小代币单位）"
+					}
+				},
+				"approve(address,uint256)": {
+					"details": "授权：允许 spender 从调用者账户代扣 value 数量代币",
+					"params": {
+						"spender": "被授权地址",
+						"value": "授权额度（最小代币单位）"
+					},
+					"returns": {
+						"_0": "授权是否成功"
+					}
+				},
+				"balanceOf(address)": {
+					"details": "查询账户余额",
+					"params": {
+						"account": "要查询的账户地址"
+					},
+					"returns": {
+						"_0": "账户余额（最小代币单位）"
+					}
+				},
+				"constructor": {
+					"details": "初始化代币信息，并将初始总量 mint 给部署者",
+					"params": {
+						"decimals_": "小数位数",
+						"initialSupply_": "初始总供应量（单位：代币本身，如 10000 表示 10000 个代币）",
+						"name_": "代币名称",
+						"symbol_": "代币符号"
+					}
+				},
+				"mint(address,uint256)": {
+					"details": "增发代币：仅所有者可调用，向 to 账户增发 value 数量代币",
+					"params": {
+						"to": "接收增发代币的账户",
+						"value": "增发数量（代币本身单位，如 100 表示 100 个代币）"
+					}
+				},
+				"transfer(address,uint256)": {
+					"details": "转账：从调用者账户向 to 转移 value 数量代币",
+					"params": {
+						"to": "接收者地址",
+						"value": "转账数量（最小代币单位）"
+					},
+					"returns": {
+						"_0": "转账是否成功"
+					}
+				},
+				"transferFrom(address,address,uint256)": {
+					"details": "代扣转账：spender 从 from 账户向 to 转移 value 数量代币（需提前授权）",
+					"params": {
+						"from": "代币来源账户",
+						"to": "接收者地址",
+						"value": "转账数量（最小代币单位）"
+					},
+					"returns": {
+						"_0": "转账是否成功"
+					}
+				}
+			},
+			"title": "SimpleERC20",
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"SimpleERC20.sol": "SimpleERC20"
+		},
+		"evmVersion": "shanghai",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"SimpleERC20.sol": {
+			"keccak256": "0xf6e29194f28b228ee8bf8f051521dde90da5533e0cebffc440a1722e793cc4ea",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://62c26bd066c4fce553f8b721ee88aca34a57bbd104e41eb0654d5d512f311ec2",
+				"dweb:/ipfs/QmT9zBCMu3iRdhBsQu4bqDzUedncESfRXBDFfZvdJfemzQ"
+			]
+		}
+	},
+	"version": 1
+}
